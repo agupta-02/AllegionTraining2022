@@ -8,16 +8,16 @@ namespace AllegionUtility
 {
     public class Greetings
     {
-        public void SayHelloQA() { Console.WriteLine("Welcome to QA"); }
+        public string SayHelloQA() { return "Welcome to QA"; }
 
-        public void SayHelloDev() { Console.WriteLine("Welcome to Development"); }
+        public string SayHelloDev() { return "Welcome to Development"; }
 
-        public void SayHelloLines(int count, string message)
-        {
-            for(int i = 0; i < count; i++)
-            {
-                Console.WriteLine(message);
-            }
-        }
+        //public void SayHelloLines(int count, string message)
+        //{
+        //    for(int i = 0; i < count; i++)
+        //    {
+        //        Console.WriteLine(message);
+        //    }
+        //}
     }
 }

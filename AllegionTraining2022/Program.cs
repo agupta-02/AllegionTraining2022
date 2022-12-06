@@ -19,7 +19,7 @@ namespace AllegionTraining2022
 
             grt.SayHelloDev();
 
-            grt.SayHelloLines(4, "Hello");
+            //grt.SayHelloLines(4, "Hello");
         }
     }
 }
