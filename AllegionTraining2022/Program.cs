@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Chrome;
+using System.Drawing.Drawing2D;
 
 namespace AllegionTraining2022
 {
@@ -11,15 +13,9 @@ namespace AllegionTraining2022
     {
         static void Main(string[] args)
         {
-            Greetings grt = new Greetings();
-
-            Console.WriteLine("Hello World");
-
-            grt.SayHelloQA();
-
-            grt.SayHelloDev();
-
-            //grt.SayHelloLines(4, "Hello");
+            ChromeDriver _browser= new ChromeDriver();
+            _browser.Url = "https://www.selenium.dev/selenium/docs/api/dotnet/";
+            Console.WriteLine(_browser.Title);
         }
     }
 }
